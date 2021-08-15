@@ -3,6 +3,10 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyled = createGlobalStyle`
     :root {
         --color-background: #181818;   
+        --color-background-sidenav-primary: #d9e6e9;
+        --color-background-sidenav-secundary: #BED5DA;
+        --color-text-sidenav-primary: #0e353d;
+        --color-text-sidenav-secundary: #A4C4CB;
         --color-border-right: #b7b7b7;     
         --color-text-theme: #ffffff;
         --color-background-button: #53b2d9;
