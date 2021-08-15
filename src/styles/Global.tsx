@@ -11,6 +11,7 @@ export const GlobalStyled = createGlobalStyle`
         --color-button-secundary: #fff;
         --color-text-button-primary: #fff;
         --color-text-button-secundary: #0e353d;
+        --color-text-primary: #fff;
         --color-border-right: #b7b7b7;     
     }
   *{
