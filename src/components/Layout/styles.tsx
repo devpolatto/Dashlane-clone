@@ -4,7 +4,7 @@ export const GridContainer = styled.div`
     display: grid;
 
     grid-template-columns: 320px auto;
-    grid-template-rows: 75px 100%;
+    grid-template-rows: 75px auto;
 
     // SN -> Side Nav
     // HR -> Header
