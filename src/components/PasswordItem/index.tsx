@@ -4,7 +4,11 @@ import {
     Container,
     InfoPreview,
     Logo,
-    Site
+    Site,
+    Status,
+    Options,
+    FaExternalLinkAltIcon,
+    FaEllipsisHIcon
 } from './styles';
 
 interface PasswordProps {
@@ -14,7 +18,8 @@ interface PasswordProps {
     website?: string;
     name: string;
     category?: string;
-    note?: string
+    note?: string,
+    lastUsed?: string;
 }
 
 const PasswordItem: React.FC<PasswordProps> = ({
@@ -24,19 +29,33 @@ const PasswordItem: React.FC<PasswordProps> = ({
     website,
     name,
     category,
-    note
+    note,
+    lastUsed
 }: PasswordProps) => {
   return(
       <Container>
-          <InfoPreview>
-            <Logo>
-                <h4>{name[0]+name[1]}</h4>
-            </Logo>
-          </InfoPreview>
-          <Site>
-              <h2>{website}</h2>
-              <h3>{email || login}</h3>
-          </Site>
+            <InfoPreview>
+                <Logo>
+                    <h4>{name[0]+name[1]}</h4>
+                </Logo>
+                <Site>
+                    <h2>{website}</h2>
+                    <h3>{email || login}</h3>
+                </Site>
+            </InfoPreview>
+            <Status>
+                <h2>{category || 'No category'}</h2>
+                <h2>{lastUsed || 'Not used'}</h2>
+            </Status>
+            <Options>
+                <button className="show">
+                    <FaExternalLinkAltIcon/>
+                    <h2>Go to website</h2>
+                </button>
+                <button>
+                    <FaEllipsisHIcon/>
+                </button>
+            </Options>
       </Container>
   );
 }
