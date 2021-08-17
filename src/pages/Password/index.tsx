@@ -8,26 +8,26 @@ const Password: React.FC = () => {
             email=""
             login="teste"
             password="mu$G`Pe`3qL/NU)_4"
+            website="notion.so"
+            name="notion"
+            category=""
+            note=""
+          />
+          <PasswordItem
+            email="polatto.xcode.job@gmail.com"
+            login=""
+            password="<Ut.+{HDx8T5S"
             website="discord.com"
-            name="Discord"
+            name="twitch.tv"
             category=""
             note=""
           />
           <PasswordItem
             email="teste@teste.com"
-            login=""
+            login="slack.com"
             password="mu$G`Pe`3qL/NU)_4"
-            website="discord.com"
-            name="Discord"
-            category=""
-            note=""
-          />
-          <PasswordItem
-            email="teste@teste.com"
-            login=""
-            password="mu$G`Pe`3qL/NU)_4"
-            website="discord.com"
-            name="Discord"
+            website="twitch.tv"
+            name="twitch"
             category=""
             note=""
           />
